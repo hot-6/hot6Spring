@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>질문 목록</title>
-    <link rel="stylesheet" href="../../css/boardList.css">
+    <link rel="stylesheet" href="../../css/board/boardList.css">
+    <link rel="stylesheet" href="../../css/main/header.css">
+    <link rel="stylesheet" href="../../css/main/footer.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script>  
+    $(function(){
+    $("#header").load("../main/header.html");  
+    $("#footer").load("../main/footer.html");  
+    }); 
+    </script> 
 </head>
 <body>
     <div class="base">
     <!-- header 작성 -->
+    <div id="header"></div>
     
         <div class="container">
             <div class="bannerContainer">
@@ -34,8 +44,8 @@
                             <li><a href="#">홈</a></li>
                             <li>
                                 <hr style="margin-top: 12px; border-top: 2px dashed rgb(222, 222, 222);">
-                                <a href="#">기출 문제</a><br>
-                                <a href="#">대회 문제</a>
+                                <a class="todayProblems" href="#">기출 문제</a><br>
+                                <a class="contestProblems" href="#">대회 문제</a>
                             </li>
                         </ul>
                     </div>
@@ -196,5 +206,6 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
