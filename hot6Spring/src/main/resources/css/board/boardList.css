@@ -11,7 +11,9 @@ body{
     line-height: 1.6;
     color: #333;
     display: block;
-    height: auto !important;
+    /* height: auto !important;*/
+    /* height: 1350px  article 10개일 경우; */
+    height: 900px;
     min-height: 100%;
     position: relative;
     background-color: #f8f8f8;
@@ -46,8 +48,7 @@ hr{
 }
 
 .base{
-    height: auto !important;
-    
+    height: 100%;
     margin-top: 0;
     transition: margin-top .25s cubic-bezier(.77,.2,.05,1);
     background: #fafafa;

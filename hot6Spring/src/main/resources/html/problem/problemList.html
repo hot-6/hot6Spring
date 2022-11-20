@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 문제</title>
     <link rel="stylesheet" href="../../css/problem/problemList.css">
+    <link rel="stylesheet" href="../../css/main/header.css">
+    <link rel="stylesheet" href="../../css/main/footer.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script>  
+    $(function(){
+    $("#header").load("../main/header.html");  
+    $("#footer").load("../main/footer.html");  
+    }); 
+    </script> 
 </head>
 <body>
     <div class="base">
     <!-- header 작성 -->
+    <div id="header"></div>
     
         <div class="container">
             <div class="bannerContainer">
@@ -114,5 +124,6 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>

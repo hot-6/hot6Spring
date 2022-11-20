@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문제 상세</title>
     <link rel="stylesheet" href="../../css/problem/problemDetail.css">
+    <link rel="stylesheet" href="../../css/main/header.css">
+    <link rel="stylesheet" href="../../css/main/footer.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script>  
+    $(function(){
+    $("#header").load("../main/header.html");  
+    $("#footer").load("../main/footer.html");  
+    }); 
+    </script> 
 </head>
 <body>
     <div class="base">
     <!-- header 작성 -->
+    <div id="header"></div>
 
         <div class="container">
             <div class="mainbox">
-                <header class="mainboxHeader box">
+                <div class="mainboxHeader box">
                     <div>
                         <!-- 대회일때는 span태그안에 글자가 "대회"가 되도록 변경 -->
                         <!-- a태그에 링크도 대회목록 url로 변경 -->
@@ -30,7 +40,7 @@
                         </div>
                     </div>
                     <hr>
-                </header>
+                </div>
                 <div class="mainboxBody box">
                     <p>“어디 외출이라도 했었나 봐?”</p>
                     <p>안락의자 위에서 몸을 한껏 웅크리고 있던 탐정이 말했다.</p>
@@ -65,5 +75,6 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>

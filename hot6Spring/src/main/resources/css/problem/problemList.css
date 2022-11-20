@@ -16,7 +16,8 @@ body{
     line-height: 1.6;
     color: #333;
     display: block;
-    height: auto !important;
+    /* height: auto !important; */
+    height: 635px;
     min-height: 100%;
     position: relative;
     background-color: #f8f8f8;
@@ -46,8 +47,8 @@ hr{
 }
 
 .base{
-    height: auto !important;
-    
+    /* height: auto !important; */
+    height: 635px;
     margin-top: 0;
     transition: margin-top .25s cubic-bezier(.77,.2,.05,1);
     background: #fafafa;
